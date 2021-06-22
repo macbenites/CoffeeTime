@@ -15,9 +15,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="horizontal">
 
-        >
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,7 +24,7 @@
             android:drawableLeft="@drawable/ic_previous"
             android:textAllCaps="false"
             android:textColor="@color/fontPrimary"
-            app:backgroundTint="@color/menu1"
+            app:backgroundTint="@color/startcolor"
             />
 
         <ImageView
@@ -97,20 +96,19 @@
             android:id="@+id/btnMenu2"
             android:layout_width="77dp"
             android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
             android:backgroundTint="@color/menu1"
             android:drawableTop="@drawable/ic_burger"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:text="@string/txtMenu2"
             android:textAlignment="center"
+            android:textAllCaps="false"
             android:textColor="@color/fontTitle"
             android:textSize="10sp"
             android:textStyle="bold"
-            android:layout_weight="1"
-            android:textAllCaps="false"
-            android:layout_margin="2dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            app:cornerRadius="15dp"
-            />
+            app:cornerRadius="15dp" />
 
         <Button
             android:id="@+id/btnMenu1"
@@ -151,24 +149,25 @@
         android:layout_marginTop="40dp"
 
         >
+
         <Button
             android:id="@+id/btnMenu6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="25dp"
             android:layout_margin="10dp"
+            android:layout_weight="1"
             android:backgroundTint="@color/menu1"
             android:drawableTop="@drawable/brochetas"
             android:drawablePadding="12dp"
+            android:padding="25dp"
             android:text="@string/txtMenu7"
             android:textAlignment="center"
+            android:textAllCaps="false"
             android:textColor="@color/fontTitle"
             android:textSize="14sp"
-            android:textAllCaps="false"
             android:textStyle="bold"
-            app:cornerRadius="15dp"
-            android:layout_weight="1"
-            />
+            app:cornerRadius="15dp" />
+
         <Button
             android:id="@+id/plato2"
             android:layout_width="match_parent"

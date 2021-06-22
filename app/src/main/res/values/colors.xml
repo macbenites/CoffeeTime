@@ -20,5 +20,6 @@
     <color name="buttonPaypal">#1F265E</color>
     <color name="fontTitle">#3F414E</color>
     <color name="btnFacebook">#7583CA</color>
+    <color name="startcolor">#FDFBFB</color>
 
 </resources>
