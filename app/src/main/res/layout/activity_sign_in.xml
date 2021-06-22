@@ -30,7 +30,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-light"
         android:hint="@string/txtUsuario"
-        android:inputType="textWebEmailAddress"
+        android:inputType="textPersonName"
 
          />
     <EditText
@@ -43,7 +43,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-light"
         android:hint="@string/txtContraseña"
-        android:inputType="textWebPassword"
+        android:inputType="textPersonName"
 
         />
 
@@ -53,7 +53,7 @@
         android:layout_height="60dp"
         android:layout_margin="50dp"
         android:layout_marginBottom="30dp"
-        android:onClick="login"
+        android:onClick="signinUser"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/btnIngresar"
