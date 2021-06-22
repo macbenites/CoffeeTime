@@ -4,32 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.SignUp"
+    tools:context=".auth.SignIn"
     android:orientation="vertical"
     android:padding="30dp"
     >
 
 
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titleLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
-        android:text="@string/txtLogin"
+        android:text="@string/titleSignUp"
         android:textColor="@color/fontTitle"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        />
-
-
-
-
+        android:textSize="34dp"
+        android:textStyle="bold" />
     <EditText
-        android:id="@+id/inputUser"
-        android:layout_width="350dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/input_style"
         android:ems="10"
         android:fontFamily="sans-serif-light"
@@ -38,10 +33,11 @@
 
         />
     <EditText
-        android:id="@+id/idPwd"
-        android:layout_width="350dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/input_style"
         android:ems="10"
         android:fontFamily="sans-serif-light"
@@ -51,24 +47,18 @@
         />
 
     <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="350dp"
-        android:layout_height="54dp"
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_margin="50dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="52dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="@string/btnIngresar"
+        android:text="@string/btnRegistrar"
         android:textColor="@color/fontPrimary"
         app:backgroundTint="@color/primary"
         app:cornerRadius="24dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="@string/txtLogInCheck"
-        android:textStyle="bold"
-        />
+
 
 </LinearLayout>

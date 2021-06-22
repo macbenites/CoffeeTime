@@ -10,21 +10,19 @@
     >
 
 
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titleLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="124dp"
         android:text="@string/txtLogin"
         android:textColor="@color/fontTitle"
         android:textSize="34dp"
-        android:textStyle="bold"
-         />
+        android:textStyle="bold" />
     <EditText
         android:id="@+id/inputUser"
         android:layout_width="match_parent"
-        android:padding="10dp"
+        android:paddingLeft="20dp"
         android:layout_height="50dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/input_style"
@@ -38,7 +36,7 @@
         android:id="@+id/idPwd"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:padding="10dp"
+        android:paddingLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/input_style"
         android:ems="10"
@@ -51,14 +49,30 @@
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_marginBottom="52dp"
+        android:layout_margin="50dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/btnIngresar"
         android:textColor="@color/fontPrimary"
         app:backgroundTint="@color/primary"
         app:cornerRadius="24dp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="50dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="registerUser"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/btnRegistrar"
+        android:textColor="@color/fontPrimary"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="24dp" />
+
 
 
 

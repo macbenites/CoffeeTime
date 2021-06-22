@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.coffeetime.auth.SignIn;
 import com.example.coffeetime.auth.SignUp;
 
 import java.util.Timer;
@@ -20,7 +21,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         TimerTask tarea = new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreenActivity.this, SignUp.class);
+                Intent intent = new Intent(SplashScreenActivity.this, SignIn.class);
                 startActivity(intent);
                 finish();
             }
