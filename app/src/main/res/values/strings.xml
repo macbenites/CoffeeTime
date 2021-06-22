@@ -48,7 +48,7 @@
     <string name="btnFacebook">Continuar con facebook</string>
     <string name="btnGoogle">Continuar con google</string>
     <string name="cornerBtn">38dp</string>
-    <string name="txtLogin">O LOGEARTE CON TU EMAIL</string>
+    <string name="txtLogin">Iniciar Sesión</string>
     <string name="btnIngresar">Ingresar</string>
     <string name="txtUsuario">Usuario o Correo electronico</string>
     <string name="txtContraseña">Contraseña</string>
