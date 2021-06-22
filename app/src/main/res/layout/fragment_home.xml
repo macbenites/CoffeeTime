@@ -7,44 +7,137 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
     android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="72dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:src="@drawable/ic_coffetime"
-         />
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_previous"
+            android:textAllCaps="false"
+            android:textColor="@color/fontPrimary"
+            app:backgroundTint="@color/menu1"
+            />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_coffetime"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
     <TextView
         android:id="@+id/titleCart"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="64dp"
         android:fontFamily="@font/grotesk_medium"
         android:text="@string/txtLaCarta"
+        android:layout_marginTop="12dp"
         android:textColor="@color/fontTitle"
         android:textSize="34sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <Button
+            android:id="@+id/btnMenu3"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/menu1"
+            android:drawableTop="@drawable/ic_postre"
+            android:text="@string/txtMenu3"
+            android:textAlignment="center"
+            android:textColor="@color/fontTitle"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_margin="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:cornerRadius="15dp"
+            />
+
+            <Button
+            android:id="@+id/btnMenu4"
+            android:layout_width="77dp"
+                android:layout_height="match_parent"
+            android:backgroundTint="@color/menu1"
+            android:drawableTop="@drawable/ic_flat"
+            android:text="@string/txtMenu4"
+            android:textAlignment="center"
+            android:textColor="@color/fontTitle"
+            android:textSize="10sp"
+            android:textStyle="bold"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_margin="2dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:cornerRadius="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnMenu2"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/menu1"
+            android:drawableTop="@drawable/ic_burger"
+            android:text="@string/txtMenu2"
+            android:textAlignment="center"
+            android:textColor="@color/fontTitle"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_margin="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:cornerRadius="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnMenu1"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/menu1"
+            android:drawableTop="@drawable/ic_breakfast_1"
+            android:text="@string/txtMenu1"
+            android:textAlignment="center"
+            android:textColor="@color/fontTitle"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_margin="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:cornerRadius="15dp"
+            />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/titleCart2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/grotesk_medium"
         android:text="@string/txtRecomendacionesparati"
         android:textColor="@color/fontTitle"
@@ -52,147 +145,50 @@
         android:textStyle="bold"
          />
 
-    <Button
-        android:id="@+id/btnMenu6"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/brochetas"
-        android:text="@string/txtMenu7"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
-         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
 
-    <Button
-        android:id="@+id/btnMenu7"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/ensalada1"
-        android:text="@string/txtMenu8"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
-  />
+        >
+        <Button
+            android:id="@+id/btnMenu6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/menu1"
+            android:drawableTop="@drawable/brochetas"
+            android:drawablePadding="12dp"
+            android:text="@string/txtMenu7"
+            android:textAlignment="center"
+            android:textColor="@color/fontTitle"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/plato2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:drawablePadding="12dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/menu1"
+            android:drawableTop="@drawable/brochetas"
+            android:text="Arroz con Pato"
+            android:textAlignment="center"
+            android:textColor="@color/fontTitle"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            android:layout_weight="1"
+            />
 
-    <Button
-        android:id="@+id/btnMenu5"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/ajidegallina"
-        android:text="@string/txtMenu6"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
-      />
-
-    <Button
-        android:id="@+id/btnMenu8"
-        android:layout_width="164dp"
-        android:layout_height="169dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/brochetas"
-        android:text="@string/txtMenu9"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
- />
-
-    <Button
-        android:id="@+id/btnMenu1"
-        android:layout_width="77dp"
-        android:layout_height="127dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/ic_breakfast_1"
-        android:text="@string/txtMenu1"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
- />
-
-    <Button
-        android:id="@+id/btnMenu2"
-        android:layout_width="77dp"
-        android:layout_height="127dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/ic_burger"
-        android:text="@string/txtMenu2"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
-      />
-
-    <Button
-        android:id="@+id/btnMenu4"
-        android:layout_width="77dp"
-        android:layout_height="127dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/ic_flat"
-        android:text="@string/txtMenu4"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="8sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
- />
-
-    <Button
-        android:id="@+id/btnMenu3"
-        android:layout_width="77dp"
-        android:layout_height="127dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:backgroundTint="@color/menu1"
-        android:drawableTop="@drawable/ic_postre"
-        android:text="@string/txtMenu3"
-        android:textAlignment="center"
-        android:textColor="@color/fontTitle"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="@android:dimen/app_icon_size"
- />
+    </LinearLayout>
 
 
 </LinearLayout>

@@ -7,7 +7,8 @@
     android:background="@drawable/bg_color"
     tools:context=".auth.SignIn"
     android:orientation="vertical"
-    android:padding="30dp">
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
 
 
     <TextView
@@ -50,13 +51,15 @@
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_margin="50dp"
         android:layout_marginBottom="30dp"
         android:onClick="signinUser"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:text="@string/btnIngresar"
+        android:textAllCaps="false"
+        android:textSize="16dp"
         android:textColor="@color/fontPrimary"
         app:backgroundTint="@color/primary"
         app:cornerRadius="24dp" />
@@ -74,13 +77,16 @@
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:layout_marginBottom="50dp"
         android:onClick="registerUser"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
         android:text="@string/btnRegistrar"
+
         android:textColor="@color/fontPrimary"
         app:backgroundTint="@color/primary"
         app:cornerRadius="24dp" />
