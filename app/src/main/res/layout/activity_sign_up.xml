@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".auth.SignIn"
-    android:background="@drawable/bg_color"
     android:orientation="vertical"
     android:padding="30dp"
     >
@@ -50,10 +49,9 @@
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
         android:layout_margin="50dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="52dp"
-        android:onClick="registerUser"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/btnRegistrar"

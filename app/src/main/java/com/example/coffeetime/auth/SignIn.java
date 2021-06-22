@@ -36,7 +36,6 @@ public class SignIn extends AppCompatActivity {
         et_password = (EditText) findViewById(R.id.idPwd);
 
     }
-
     public void login(View view){
         String email = et_email.getText().toString().trim();
         String password = et_password.getText().toString().trim();
