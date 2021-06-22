@@ -20,7 +20,7 @@ public class StartAppActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_app);
-        imageView = findViewById(R.id.imageView2);
+        imageView = findViewById(R.id.imageView);
         Picasso.get()
                 .load(url)
                 .into(imageView);
@@ -28,7 +28,7 @@ public class StartAppActivity extends AppCompatActivity {
 
     public void signHome(View view){
 
-        Intent intent = new Intent(this, Menu_Navegation.class);
+        Intent intent = new Intent( this, Menu_Navegation.class);
         startActivity(intent);
     }
 }
