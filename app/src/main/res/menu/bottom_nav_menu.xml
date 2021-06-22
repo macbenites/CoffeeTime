@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_alarm"
+        android:icon="@drawable/ic_menu_alarm"
+        android:title="@string/title_alarm" />
+
+    <item
+        android:id="@+id/navigation_market"
+        android:icon="@drawable/ic_menu_market"
+        android:title="@string/title_market" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_menu_profile"
+        android:title="@string/title_profile" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_menu_history"
+        android:title="@string/title_history" />
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="@string/title_logout" />
+
+</menu>

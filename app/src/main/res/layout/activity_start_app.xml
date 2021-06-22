@@ -45,12 +45,12 @@
         android:id="@+id/btn_Start"
         android:layout_width="318dp"
         android:layout_height="50dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/btn_round"
 
+        android:onClick="signHome"
         android:text="@string/btnStart"
         android:textColor="@color/fontPrimary"
-        app:backgroundTint="@color/primary"
-         />
+        app:backgroundTint="@color/primary" />
 
 </LinearLayout>

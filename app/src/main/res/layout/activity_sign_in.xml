@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
     tools:context=".auth.SignIn"
     android:orientation="vertical"
-    android:padding="30dp"
-    >
+    android:padding="30dp">
 
 
     <TextView
         android:id="@+id/titleLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="50dp"
         android:text="@string/txtLogin"
         android:textColor="@color/fontTitle"
         android:textSize="34dp"
         android:textStyle="bold" />
+
     <EditText
         android:id="@+id/inputUser"
         android:layout_width="match_parent"
@@ -49,9 +50,10 @@
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="match_parent"
-        android:layout_margin="50dp"
         android:layout_height="60dp"
+        android:layout_margin="50dp"
         android:layout_marginBottom="30dp"
+        android:onClick="signinUser"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="@string/btnIngresar"
@@ -59,12 +61,22 @@
         app:backgroundTint="@color/primary"
         app:cornerRadius="24dp" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/txtOlvidado"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="italic" />
+
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_margin="50dp"
-        android:layout_marginBottom="52dp"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="50dp"
         android:onClick="registerUser"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"

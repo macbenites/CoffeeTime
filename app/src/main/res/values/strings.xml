@@ -51,6 +51,7 @@
     <string name="txtLogin">Iniciar Sesión</string>
     <string name="btnIngresar">Ingresar</string>
     <string name="txtUsuario">Usuario o Correo electronico</string>
+    <string name="txtOlvidado">¿No cuenta con un correo?</string>
     <string name="titleSignUp">Registrar</string>
     <string name="txtContraseña">Contraseña</string>
     <!--Shopping Cart-->

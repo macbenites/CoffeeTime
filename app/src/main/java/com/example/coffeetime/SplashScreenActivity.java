@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.coffeetime.auth.SignIn;
-import com.example.coffeetime.auth.SignUp;
 
 import java.util.Timer;
 import java.util.TimerTask;
