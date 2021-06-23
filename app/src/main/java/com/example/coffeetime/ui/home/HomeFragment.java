@@ -19,6 +19,7 @@ import com.example.coffeetime.databinding.FragmentHomeBinding;
 import com.example.coffeetime.model.Product;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,9 +38,17 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        imageView = view.findViewById(R.id.imgProduct);
+        Picasso.get()
+                .load(url)
+                .into(imageView);
+
         return inflater.inflate(R.layout.fragment_home, container, false);
 
     }
+
 
     @Override
     public void onDestroyView() {
