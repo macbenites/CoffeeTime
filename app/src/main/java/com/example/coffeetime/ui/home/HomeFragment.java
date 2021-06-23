@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,20 +16,29 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.coffeetime.R;
 import com.example.coffeetime.databinding.FragmentHomeBinding;
+import com.example.coffeetime.model.Product;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    public List<Product> listProduct = new ArrayList<Product>();
+    ArrayAdapter<Product> arrayAdapterProduct;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    String url = "https://static.india.com/wp-content/uploads/2018/09/42-4.jpg";
+    ImageView imageView;
+
+
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        return inflater.inflate(R.layout.fragment_home, container, false);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-        return root;
     }
 
     @Override
@@ -35,4 +46,7 @@ public class HomeFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
+
 }

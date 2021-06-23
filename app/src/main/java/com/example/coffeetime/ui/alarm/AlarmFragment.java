@@ -13,10 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.coffeetime.R;
+import com.example.coffeetime.databinding.FragmentAlarmBinding;
+import com.example.coffeetime.databinding.FragmentMarketBinding;
 
 public class AlarmFragment extends Fragment {
 
-    private AlarmViewModel mViewModel;
+    private FragmentAlarmBinding binding;
+
 
     public static AlarmFragment newInstance() {
         return new AlarmFragment();
@@ -29,10 +32,9 @@ public class AlarmFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(AlarmViewModel.class);
-        // TODO: Use the ViewModel
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 
 }

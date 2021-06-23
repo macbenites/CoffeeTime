@@ -13,11 +13,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.coffeetime.R;
+import com.example.coffeetime.databinding.FragmentHistoryBinding;
 
 public class history extends Fragment {
 
-    private HistoryViewModel mViewModel;
-
+    private FragmentHistoryBinding binding;
     public static history newInstance() {
         return new history();
     }
@@ -29,10 +29,8 @@ public class history extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(HistoryViewModel.class);
-        // TODO: Use the ViewModel
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
-
 }

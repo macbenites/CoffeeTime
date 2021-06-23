@@ -13,11 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.coffeetime.R;
+import com.example.coffeetime.databinding.FragmentAlarmBinding;
+import com.example.coffeetime.databinding.FragmentLogoutBinding;
 
 public class LogoutFragment extends Fragment {
 
-    private LogoutViewModel mViewModel;
-
+    private FragmentLogoutBinding binding;
     public static LogoutFragment newInstance() {
         return new LogoutFragment();
     }
@@ -29,10 +30,9 @@ public class LogoutFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(LogoutViewModel.class);
-        // TODO: Use the ViewModel
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 
 }
